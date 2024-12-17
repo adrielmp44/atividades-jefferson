@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions Explicado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .example {
+            margin: 20px 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            margin: 10px 0;
+            transition: all 0.5s ease;
+        }
+        .box:hover {
+            transform: scale(1.2);
+            background-color: #8BC34A;
+        }
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entendendo CSS Transitions</h1>
+    <p>As <strong>CSS Transitions</strong> permitem que você adicione animações suaves quando as propriedades CSS de um elemento mudam. Isso melhora a experiência do usuário, tornando mudanças visuais mais agradáveis.</p>
+
+    <h2>Como usar CSS Transitions?</h2>
+    <p>Adicione a propriedade <code>transition</code> ao elemento que deseja animar. Ela define:</p>
+    <ul>
+        <li><strong>Propriedade:</strong> Qual propriedade CSS será animada (ex.: <code>background-color</code>, <code>transform</code>).</li>
+        <li><strong>Duração:</strong> O tempo que a transição levará (ex.: <code>0.5s</code>).</li>
+        <li><strong>Função de Timing:</strong> O ritmo da animação (ex.: <code>ease</code>, <code>linear</code>).</li>
+        <li><strong>Atraso:</strong> Quanto tempo esperar antes de começar (<em>opcional</em>).</li>
+    </ul>
+
+    <h2>Exemplo Prático</h2>
+    <div class="example">
+        <p>Este quadrado mudará de tamanho e cor quando o mouse passar por cima:</p>
+        <div class="box"></div>
+        <p><strong>Código CSS:</strong></p>
+        <pre>
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    transition: all 0.5s ease;
+}
+.box:hover {
+    transform: scale(1.2);
+    background-color: #8BC34A;
+}
+        </pre>
+    </div>
+
+    <h2>Principais Propriedades de Transition</h2>
+    <ul>
+        <li><code>transition-property</code>: Define quais propriedades serão animadas (ex.: <code>background-color</code>, <code>all</code>).</li>
+        <li><code>transition-duration</code>: Define a duração da animação (ex.: <code>1s</code>, <code>500ms</code>).</li>
+        <li><code>transition-timing-function</code>: Controla o ritmo da animação (ex.: <code>ease</code>, <code>linear</code>, <code>ease-in</code>).</li>
+        <li><code>transition-delay</code>: Define o atraso antes da animação começar (ex.: <code>0.2s</code>).</li>
+    </ul>
+
+    <h2>Resumo</h2>
+    <p>Com <strong>CSS Transitions</strong>, você pode criar efeitos visuais suaves ao alterar propriedades CSS. Teste diferentes combinações de <code>transition</code> para explorar suas possibilidades!</p>
+</body>
+</html>
